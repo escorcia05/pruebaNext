@@ -41,6 +41,7 @@ body {
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
 }
+
 .der {
   width: 50%;
   text-align: center;
@@ -75,7 +76,6 @@ body {
   width: 100%;
   height: 50%;
   display: block;
-  
 }
 
 
@@ -99,6 +99,7 @@ body {
   height: 100%;
   opacity: .8;
 }
+
 .ruleTenis h4{
   color: white;
   font-size: bold;
@@ -146,7 +147,6 @@ body {
 
 .title{
   margin-top: 3px;
-  
 }
 
 .descriptionSchedule{
