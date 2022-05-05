@@ -6,6 +6,10 @@ body {
   background:rgba(0,123,201,255);
 }
 
+.hola{
+  color: black;
+}
+
 .container {
   display: flex;
   justify-content: center;
