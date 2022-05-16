@@ -184,11 +184,12 @@
   display: flex;
   background: #205375;
   width: 100%;
-  height: 100px;
+  height: 96px;
   align-items: center;
   justify-content: center;
   text-align: center;
   color: white;
+  border-bottom: 4px solid white;
 }
 
 .imagenyresultado{ 
@@ -208,41 +209,122 @@ width: 60%;
 
 .resultado{
 background: #205375;
-width: 100%;
-height: 50%;
+height: 48.5%;
 color: aliceblue;
 display: flex;
 justify-content: center;
 align-items: center;
 text-align: center;
+border-bottom: 4px white solid;
+}
+
+.contentTable{
+  width: 90%;
 }
 
 table{
   margin-top: 6px;
-  width: 300px;
+  width: 100%;
+}
+
+.tablet{
+  border-collapse: collapse;
 }
 
 
 .tablet th{
   background: #0289f8;
+  border-collapse: separate;
+}
+
+table td {
+  background: rgb(255, 253, 253);
+  color: #0697f8;
 
 }
 
 .ubicacion{
-background: #f71404;  
+background: #205375;  
 width: 100%;
 height: 100px;
+display: flex;
+text-align: center;
+justify-content: center;
+align-items: center;
 
 }
+
+.final{
+
+height: 100%;
+width: 100%;
+margin: auto;
+
+}
+
+
+.textoUbicacion{
+display: flex;
+text-align: center;
+justify-content: center;
+align-items: center;
+height: 96%;
+width: 100%;
+color: #ffff;
+background-image: url(assets/tenis5.jpg);
+background-size: cover;
+border-top: 4px solid white; 
+}
+
+
+
 .imagen{
+  display: flex;
   background: #0697f8;
   height: 100%;
   width: 40%;
-  float: right;
+}
+
+
+
+.imagenTenista{
+  display: flex;
+  height: 100%;
+  width: 100%;
+  background-image: url("assets/tenis2.jpg");
+  background-size:cover;
+  justify-content: center;
+  align-items: center;
+  border-left: 4px solid white;
 }
 
 .entrada{
-  background: #3702ca;
+  background: #205375;
   width: 100%;
   height: 50%;
+  display:flex ;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+
+
+
+.blog{
+width: 100%;
+height: 50%;
+color: #ffff;
+text-align: center;
+margin-bottom: 15px;
+}
+
+button{
+  background: #205375;
+  border: none;
+  width: 100%;
+  height: 50%;
+  color: rgb(25, 24, 99);
+  cursor: pointer;
+  text-decoration: underline;
 }
