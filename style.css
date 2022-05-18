@@ -1,12 +1,9 @@
 * {
   padding: 0;
   margin: 0;
-  
-  
 
 }
  body{
-  
   background: #1a2fa8;
 }
 
@@ -37,8 +34,6 @@
   align-items: center;
   justify-content: center;
   margin:auto;
-  
-
 }
 
 .sectionIzq{
@@ -60,7 +55,6 @@
    border-bottom: 4px solid white;
 }
 
-
 .texto{
   display: flex;
   margin: auto;
@@ -73,19 +67,19 @@
   font-size: 20px;
 }
 
-
-
 .reglasYProductos {
   display: flex;
   height:250px;
   width: 100%;
-  background-color: aquamarine;  
 }
 
 .img{
   display: flex;
   width: 40%;
-  height: 100%;  
+  height: 100%; 
+  overflow: hidden; 
+  position: relative;
+
 }
 
 .productos{
@@ -110,7 +104,6 @@
 
 .reglas{
   display: inline-block;
-  background: #FF8D29;
   width: 99%;
   height: 50%;
 }
@@ -135,10 +128,8 @@
 }
  
 .medio{
-  background: green;
   width: 60%;
 }
-
 
 .reserva{
   background: #205375;  
@@ -154,7 +145,6 @@
   width: 100%;
   height: 100%;
   border-top: 4px solid white;
- 
 }
 
 .raqueta{
@@ -192,12 +182,10 @@
   width: 100%;
 }
 
-
-
 .dos{
-width: 60%;
+  width: 60%;
+  background-color:#205375;
 }
-
 
 .resultado{
 background: #205375;
@@ -211,40 +199,38 @@ border-bottom: 4px white solid;
 }
 
 .contentTable{
-  width: 90%;
+width: 90%;
 }
 
 table{
-  margin-top: 6px;
-  width: 100%;
-  background: white;
+margin-top: 6px;
+width: 100%;
+background: white;
 }
-
 
 td:first-child {
-  text-align: left;
+text-align: left;
 }
+
 .tablet{
-  border-collapse: collapse;
+border-collapse: collapse;
 }
 
 .Nombre{
-  text-align: left;
+text-align: left;
 }
-
-
 
 .tablet th{
   background: #0289f8;
-  border-collapse: separate;
-  
+  border-collapse: separate; 
 }
 
  table td {
   color: #0697f8;
 }
 
-tr:hover {background: rgb(7, 2, 78) }
+tr:hover {background: rgb(7, 2, 78) 
+}
 
 .ubicacion{
 background: #205375;  
@@ -257,28 +243,24 @@ align-items: center;
 }
 
 .final{
-
 height: 100%;
 width: 100%;
 margin: auto;
-
 }
-
 
 .textoUbicacion{
-display: flex;
-text-align: center;
-justify-content: center;
-align-items: center;
-height: 96%;
-width: 100%;
-color: #ffff;
-background-image: url(assets/tenis5.jpg);
-background-size: cover;
-border-top: 4px solid white; 
- text-shadow: black 0.1em 0.1em 0.2em;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  height: 96%;
+  width: 100%;
+  color: #ffff;
+  background-image: url(assets/tenis5.jpg);
+  background-size: cover;
+  border-top: 4px solid white; 
+  text-shadow: black 0.1em 0.1em 0.2em;
 }
-
 
 .imagen{
   display: flex;
@@ -286,8 +268,7 @@ border-top: 4px solid white;
   height: 100%;
   width: 40%;
   justify-content: center;
-  align-items: center;
-  
+  align-items: center; 
 }
 
 .img2{
@@ -303,45 +284,54 @@ img{
   transition: all .3s;
 }
 
-
 .entrada{
-  background: #205375;
+  background-color:#205375 ;
   width: 100%;
   height: 50%;
   display:flex ;
   align-items: center;
   justify-content: center;
   text-align: center;
+  transition: all 3s;
+  /* transition-duration: 5s; */
+  background-image:none;
 }
 
-
+.entrada:hover{
+  background: #dfe3e6;
+  background-image: url(assets/roger.jpg);
+  /* background: #dfe3e6; */
+  background-size: cover;
+  /* transition: all 5s; */
+}
 
 
 .blog{
-width: 100%;
-height: 50%;
-color: #ffff;
-text-align: center;
-margin-bottom: 15px;
-}
-
-button{
-  background: #205375;
-  border: none;
   width: 100%;
   height: 50%;
-  color: rgb(25, 24, 99);
-  cursor: pointer;
-  text-decoration: underline;
-}
- .product:hover{
-  color: #000;
-  background-size: cover;
-  background-image: url(assets/tenis6.jpg);
-  height: 100%;
-  
+  color: #ffff;
+  text-align: center;
+  margin-bottom: 15px;
+  /* background-color: yellow; */
 }
 
+  button{
+background: transparent;
+border: none;
+width: 60px;
+height: 50%;
+color: rgb(25, 24, 99);
+cursor: pointer;
+text-decoration: underline;
+
+}
+
+.product:hover{
+color: #000;
+background-size: cover;
+background-image: url(assets/tenis6.jpg);
+height: 100%;
+}
 
 .img2:hover img{
 filter: blur(1.5px);
@@ -350,48 +340,117 @@ transition: all .3s;
 }
 
 .img2::before{
-  content: "";
-  position: absolute ;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-   transition: all .3s;
+content: "";
+position: absolute ;
+width: 100%;
+height: 100%;
+top: 0;
+left: 0;
+transition: all .3s;
 }
    
 .img2:hover:before{
-  background: rgba(0, 0, 0, .4);
-  z-index: 10;
-  transition: all .3s;
+background: rgba(0, 0, 0, .4);
+z-index: 10;
+transition: all .3s;
 }
 
 .info{
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  color: #ffffff;
-  z-index: 12;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+position: absolute;
+width: 100%;
+height: 100%;
+top: 0;
+left: 0;
+color: #ffffff;
+z-index: 12;
+display: flex;
+justify-content: center;
+align-items: center;
 }
 
 .tituloInfo{
   position: relative;
   left: 100%;
   transition: all .3s;
+  justify-content: center;
+  align-items: center;
 }
 
 .img2:hover .tituloInfo{
-  left: 0;
-  animation-delay: .3s;
-  transition: all .3s;
+left: 0;
+animation-delay: .3s;
+transition: all .3s;
+}
+ 
+
+.horario:hover{
+  background: rgba(24, 71, 100, 0.795); 
 }
 
 
+.textoUbicacion:hover{
+  opacity: .7;
+}
+
+.aprende:hover{
+ opacity: .9;
+}
 
 
+.reserva:hover{
+  filter: contrast(150%);
+}
+
+.img:hover img{
+  filter: blur(1.5px);
+  transform: scaleX(1.5);
+  transition: all .3s;
+}
+
+.img::before{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  transition: all .3s;
+}
+.img:hover:before{
+  background: rgba(0,0,0,.4);
+  z-index: 2;
+  transition: all .3s;
+}
+ 
+
+.textoImg{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  color: white;
+  z-index: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+.textoTitulo{
+  
+}
+
+.textoTitulo{
+  position: relative;
+  left: 100%;
+}
+
+.img:hover .textoTitulo{
+  left: 0;
+  transition: all .3s;
+  animation-delay: .3s;
+}
 
 
