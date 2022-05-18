@@ -1,10 +1,12 @@
 * {
   padding: 0;
   margin: 0;
+  
 
 }
  body{
   background: #1a2fa8;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .tenis{ 
@@ -20,7 +22,8 @@
 .title{
  height: 40px;
  width: 90%;
- color: white
+ color: white;
+ font-family: 'Righteous', cursive; 
 }
 
 .container{
@@ -34,15 +37,15 @@
   align-items: center;
   justify-content: center;
   margin:auto;
+
 }
 
 .sectionIzq{
-  background: #EEF3D2;
   width: 50%;
   height: 450px;
   box-sizing: content-box;
   border: 4px solid white;
-  margin-right: 1 px;
+  margin-right:  .5px;
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
 }
@@ -84,7 +87,7 @@
 
 .productos{
   background: #205375;
-  width: 99%;
+  width: 98.5%;
   height: 48.5%;
   border-bottom: 4px solid white;
   border-left: 4px white solid;
@@ -110,7 +113,7 @@
 
 .aprende{
   background-image: url("assets/tenis.jpg");
-  width: 100%;
+  width: 99.5%;
   height: 100%;
   background-size: cover;
   border-left: 4px white solid;
@@ -122,7 +125,6 @@
 
 .textoaprende{
   color: white;
-  font-size: 20px;
   font-weight: bold;
   text-shadow: black 0.1em 0.1em 0.2em;
 }
@@ -151,6 +153,7 @@
   width: 20px;
   height: 20px;
   margin: 10px;
+  
 }
 
 .sectionDer{
@@ -161,7 +164,7 @@
   border: 4px solid white;
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
-  margin-left: o.5px;
+  margin-left: .5px;
 }
 
 .horario{
@@ -260,6 +263,7 @@ margin: auto;
   background-size: cover;
   border-top: 4px solid white; 
   text-shadow: black 0.1em 0.1em 0.2em;
+  font-size: 19px;
 }
 
 .imagen{
@@ -276,6 +280,7 @@ margin: auto;
   height: 100%;
   overflow: hidden;
   position: relative;
+  border-left: 4px white solid;
 }
 
 img{
@@ -300,7 +305,6 @@ img{
 .entrada:hover{
   background: #dfe3e6;
   background-image: url(assets/roger.jpg);
-  /* background: #dfe3e6; */
   background-size: cover;
   /* transition: all 5s; */
 }
@@ -312,7 +316,6 @@ img{
   color: #ffff;
   text-align: center;
   margin-bottom: 15px;
-  /* background-color: yellow; */
 }
 
   button{
@@ -327,10 +330,11 @@ text-decoration: underline;
 }
 
 .product:hover{
-color: #000;
 background-size: cover;
 background-image: url(assets/tenis6.jpg);
 height: 100%;
+color: #000;
+transition: all .4s;
 }
 
 .img2:hover img{
@@ -369,6 +373,8 @@ align-items: center;
 }
 
 .tituloInfo{
+  display: flex;
+  flex-direction: column;
   position: relative;
   left: 100%;
   transition: all .3s;
@@ -452,5 +458,19 @@ transition: all .3s;
   transition: all .3s;
   animation-delay: .3s;
 }
+ 
+.reserva:hover .raqueta{
+animation: bounce1 .5s alternate infinite ease-in;
+}
 
 
+
+@keyframes bounce1{
+  0%{
+     transform: translateY(-180%)
+  }
+
+  100%{
+    transform: translateY(0%)
+  }
+}
